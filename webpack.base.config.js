@@ -47,7 +47,7 @@ module.exports = {
             {
                 test: /\.less/,
                 use: ExtractTextPlugin.extract({
-                    use: ['autoprefixer-loader', 'less-loader'],
+                    use: ['css-loader','autoprefixer-loader', 'less-loader'],
                     fallback: 'style-loader'
                 })
             },
